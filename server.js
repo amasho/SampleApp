@@ -1,4 +1,4 @@
-// server_nginx.js
+// server.js
 
 var	$ = require('jquery');
 
