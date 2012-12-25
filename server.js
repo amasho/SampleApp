@@ -19,9 +19,8 @@ $(function(){
 		mongo.model("chat", chat);
 		chat = mongo.model("chat");
 
-
 	app.configure(function(){
-		app.set('port', process.env.PORT || 3001);
+		app.set('port', process.argv[2]);
 		app.set('views', __dirname + '/views');
 		app.set('view engine', 'ejs');
 		app.use(express.logger());
